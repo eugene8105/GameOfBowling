@@ -18,7 +18,7 @@ public class InputClass {
 
     private void rollGameHelper(){
         System.out.flush();
-        for (int i = 0; i <= 3; i++){
+        for (int i = 0; i <= 2; i++){
             letsRoll();
             rollingNumber++;
             rollBoll();

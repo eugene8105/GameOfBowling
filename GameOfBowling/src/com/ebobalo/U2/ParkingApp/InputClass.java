@@ -7,17 +7,30 @@ public class InputClass {
 
     Scanner sc = new Scanner(System.in);
     ArrayList<Frames> rl = new ArrayList<>();
+    int r_1=0;
+    int r_2=0;
+    int r_3=0;
+    int rollingNumber = 1;
+
+    public InputClass(){
+        rollGameHelper();
+    }
+
+    private void rollGameHelper(){
+        System.out.flush();
+        for (int i = 0; i <= 3; i++){
+            letsRoll();
+            rollingNumber++;
+            rollBoll();
+        }
+
+    }
+
+    private void rollBoll(){
+        CalcClass.rendNumGenerator(5);
+    }
 
     private void letsRoll(){
-        int r_1=0;
-        int r_2=0;
-        int r_3=0;
-
-
-        for (int i = 0; i<=10; i++){
-            System.out.println("Enter your score ");
-
-            String ent = sc.nextLine();
-        }
+        System.out.println(rollingNumber + " roll: ");
     }
 }

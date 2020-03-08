@@ -18,8 +18,7 @@ public class InputClass {
         for (int i = 0; i <= 10; i++){
             rollGameHelper();
         }
-
-    }
+    } // end of InputClass constructor
 
     private void rollGameHelper(){
         System.out.flush();
@@ -33,27 +32,27 @@ public class InputClass {
         setRollPoints(r_3);
         populateFrame();
         System.out.println();
-    }
-<<<<<<< HEAD
+    } // end of rollGameHelper method
 
     private int rollBoll(){
         return CalcClass.rendNumGenerator(5);
-=======
-    private void printAllFrames(){
+
+    } // end of rollBoll method
+    private void printAllFrames() {
         for (Frames element : frameList) {
             System.out.println(element);
         }
->>>>>>> fcf566db6b54a50c34b277b9cd3c9ca002ad27cc
-    }
+    } // end of printAllFrames method
 
     private void setRollPoints(int rollNumber){
         rollNumber = CalcClass.rendNumGenerator(5);
-    }
+    } // end of setRollPoints method
     private void populateFrame(){
         Frames fm = new Frames(r_1,r_2,r_3);
         frameList.add(fm);
-    }
+    } // end of populateFrame method
     private void letsRoll(){
         System.out.println(rollingNumberOutput + " roll: ");
-    }
-}
+    } // end of letsRoll method
+
+} // end of InputClass class

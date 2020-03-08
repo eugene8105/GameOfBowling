@@ -26,8 +26,8 @@ public class InputClass {
 
     }
 
-    private void rollBoll(){
-        CalcClass.rendNumGenerator(5);
+    private int rollBoll(){
+        return CalcClass.rendNumGenerator(5);
     }
 
     private void letsRoll(){

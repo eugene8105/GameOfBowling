@@ -1,7 +1,5 @@
 package com.ebobalo.U2.ParkingApp;
 
-import java.awt.*;
-
 public class Frames {
 
     private int roll_1;
@@ -31,8 +29,8 @@ public class Frames {
         this.points = totalPointsForFrame();
         globalFrameNum ++;
         localFrameNum = globalFrameNum;
-    }
+    } // end of Frames constructor
     public int totalPointsForFrame(){
         return points = roll_1 + roll_2 + roll_3;
-    }
-}
+    } // end of totalPointsForFrame method
+} // end of Frames class

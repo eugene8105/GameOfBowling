@@ -20,13 +20,11 @@ public class Player {
 
     public Player(String pName){
         this.playerName = pName;
-    }
-
+    } // end of Player constructor
     public void letsPlay() throws InterruptedException {
         letsRoll();
         rollGameLoop();
-    }
-
+    } // end of letsPlay method
     private void rollGameLoop() throws InterruptedException {
         for (int i = 0; i <= 9; i++){
             System.out.flush();
@@ -60,16 +58,15 @@ public class Player {
         }
         printAllFrames();
     } // end of rollGameHelper method
-
     private void rollMassageOutput(int rollNumber, int points){
         System.out.println("In your " + rollNumber + " roll, you have " + points);
     }
     private void rollFrameNumberMassage(int frameNumber){
         System.out.println("Frame #  " + frameNumber);
     }
+    // this method is returning a random number from 0 to 10.
     private int rollBoll(){
         return CalcClass.rendNumGenerator(10);
-
     } // end of rollBoll method
     private void printAllFrames() {
         for (Frames frm : frameList) {
@@ -83,5 +80,4 @@ public class Player {
     private void letsRoll(){
         System.out.println("Let's ROLL...");
     } // end of letsRoll method
-
-} // end of InputClass class
+} // end of Player class

@@ -21,6 +21,8 @@ public class Frames {
     static int globalFrameNum;
     int localFrameNum = 0;
 
+    //public Frames(){}
+
     public Frames(int r1, int r2, int r3, boolean frm10){
         this.roll_1 = r1;
         this.roll_2 = r2;
